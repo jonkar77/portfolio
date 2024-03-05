@@ -50,12 +50,12 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-25">
-                    <div className="flex items-center justify-around w-full h-auto border-[rgb(0,0,0)] bg-[rgba(3,0,20,0.06)] mr-[5px] px-[15px] py-[10px] rounded-full text-black">
+                    <div className="flex items-center justify-around w-full h-auto border-[rgb(0,0,0)] bg-[rgb(0,0,0)] mr-[5px] px-[15px] py-[10px] rounded-full text-white">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.title}
                                 href={link.path}
-                                className="cursor-pointer p-1 hover:text-gray-800 hover:border-2 border-black  hover:rounded-full"
+                                className="cursor-pointer p-1 hover:border-2 border-white  hover:rounded-full"
                             >
                                 {link.title}
                             </Link>

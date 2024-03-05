@@ -49,7 +49,7 @@ const HeroSection = () => {
             </Link>
             <Link
               href="/#projects"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 border-2 border-black bg-[#ffffff] hover:bg-[#000000] text-black hover:text-white"
+              className="px-6 inline-block py-[11px] w-full sm:w-fit rounded-full mr-4 border-2 border-black bg-[#ffffff] hover:bg-[#000000] text-black hover:text-white"
             >
               Projects
             </Link>
