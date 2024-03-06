@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <div className="w-full h-[85px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001400] backdrop-blur-md z-50 px-10">
+        <div className="w-full h-[70px] fixed top-0  bg-[#03001400] backdrop-blur-md z-50 px-10">
             <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
                 <Link
                     href="/"
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
                     <Image
                         src="/assets/Logo.png"
                         alt="Logo"
-                        width={90}
+                        width={100}
                         height={100}
                         draggable={false}
                         className="cursor-pointer hover:animate-slowspin"
