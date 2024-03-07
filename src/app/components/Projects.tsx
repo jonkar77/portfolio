@@ -6,11 +6,11 @@ import { ProjectCard } from "../sub/projectCard";
 export const Projects = () => {
     const PROJECTS = [
         {
-          title: "Modern Next.js 14 Portfolio",
+          title: "Melon-Estate",
           description:
             'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js',
-          image: "/assets/project.png",
-          link: "https://example.com",
+          image: "/assets/p1.png",
+          link: "https://melon-estate.onrender.com",
         },
         {
           title: "Interactive Cards Portfolio",

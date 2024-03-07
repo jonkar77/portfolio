@@ -22,12 +22,12 @@ export const ProjectCard = ({
       rel="noreferrer noopener"
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
     >
-      <div className="">
+      <div>
       <Image
         src={src}
         alt={title}
         width={800}
-        height={1000}
+        height={100}
         className="w-full object-contain bg-[#181818]"
       />
       </div>
