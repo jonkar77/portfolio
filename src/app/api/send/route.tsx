@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
-import { Resend, CreateEmailOptions } from "resend";
+import { Resend } from "resend";
 import { ReactElement } from "react";
+
+// Define the CreateEmailOptions type based on your understanding
+interface CreateEmailOptions {
+  from: string;
+  to: string[];
+  subject: string;
+  react: ReactElement;
+}
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
