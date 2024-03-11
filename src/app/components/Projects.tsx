@@ -19,7 +19,7 @@ export const Projects = () => {
     {
       title: "Another Project",
       description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience.',
+        'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience.',
       image: "/assets/project.png",
       link: "https://example.com",
     },
@@ -33,7 +33,7 @@ export const Projects = () => {
         My Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-5 px-5">
-        {PROJECTS.map((project, index) => (
+        {PROJECTS.map((project:any, index:any) => (
           <div key={index} className="border border-black">
             <ProjectCard
               key={project.title}
