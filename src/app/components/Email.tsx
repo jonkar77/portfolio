@@ -4,7 +4,6 @@ import Link from "next/link";
 import GithubIcon from "../../../public/assets/github-icon.svg";
 import LinkedinIcon from "../../../public/assets/linkedin-icon.svg";
 import React, { useState } from "react";
-// import hello from "/assets/hello.png";
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
