@@ -6,18 +6,18 @@ export const Projects = () => {
       title: "Melon-Estate",
       description:
         'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js',
-      image: "/assets/p1.png",
+      image: "/assets/project.png",
       link: "https://melon-estate.onrender.com",
     },
     {
-      title: "Interactive Cards Portfolio",
+      title: "Noodle Search",
       description:
         'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience.',
       image: "/assets/project.png",
-      link: "https://example.com",
+      link: "https://noodle-eng.vercel.app/",
     },
     {
-      title: "Another Project",
+      title: "TradingGale",
       description:
         'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience.',
       image: "/assets/project.png",
