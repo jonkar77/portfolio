@@ -15,11 +15,11 @@ const navLinks: NavLink[] = [
     },
     {
         title: "About",
-        path: "#about",
+        path: "/#about",
     },
     {
         title: "Resume",
-        path: "#resume",
+        path: "folder/Resume",
     },
 ];
 
