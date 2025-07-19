@@ -7,36 +7,25 @@ import React, { useState } from "react";
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
-  
-    const handleSubmit = async (e:any) => {
-      e.preventDefault();
-      const data = {
-        email: e.target.email.value,
-        subject: e.target.subject.value,
-        message: e.target.message.value,
-      };
-      const JSONdata = JSON.stringify(data);
-      const endpoint = "/api/send";
-  
-      // Form the request for sending data to the server.
-      const options = {
-        // The method is POST because we are sending data.
-        method: "POST",
-        // Tell the server we're sending JSON.
-        headers: {
-          "Content-Type": "application/json",
-        },
-        // Body of the request is the JSON data we created above.
-        body: JSONdata,
-      };
-  
-      const response = await fetch(endpoint, options);
-      const resData = await response.json();
-  
-      if (response.status === 200) {
-        console.log("Message sent.");
-        setEmailSubmitted(true);
-      }
+
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+        const data = {
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value,
+        };
+        console.log(data);
+        const res = await fetch("/api/sendEmail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+
+        if (res.status === 200) {
+            console.log("Message sent.");
+            setEmailSubmitted(true);
+        }
     };
 
     return (
@@ -69,25 +58,25 @@ const EmailSection = () => {
                         try my best to get back to you!
                     </p>
 
-                <div className="socials flex flex-row items-start gap-2">
-                    <Link href="https://github.com/jonkar77">
-                    <Image src={GithubIcon} alt="Github Icon" style={{ filter: 'brightness(0) invert(1)' }} />
+                    <div className="socials flex flex-row items-start gap-2">
+                        <Link href="https://github.com/jonkar77">
+                            <Image src={GithubIcon} alt="Github Icon" style={{ filter: 'brightness(0) invert(1)' }} />
 
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/joshi-onkar/">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
-                    </Link>
-                </div>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/joshi-onkar/">
+                            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                        </Link>
+                    </div>
                 </div>
 
 
             </div>
             <div className="w-3/4">
-                {emailSubmitted? (
+                {emailSubmitted ? (
                     <p className="text-green-500 text-sm mt-2 p-3 bg-black">
                         Email sent successfully!
                     </p>
-                ):(
+                ) : (
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="mb-6">
                             <label
@@ -138,6 +127,7 @@ const EmailSection = () => {
                         <button
                             type="submit"
                             className="bg-black hover:bg-black hover:bg-opacity-85 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                            onSubmit={handleSubmit}
                         >
                             Send Message
                         </button>

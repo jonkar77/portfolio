@@ -15,12 +15,13 @@ const TAB_DATA: TabData[] = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Java Programming</li>
         <li>JavaScript</li>
+        <li>Node.js</li>
         <li>React</li>
+        <li>Flutter</li>
+        <li>SQL</li>
+        <li>Data Analytics</li>
       </ul>
     ),
   },
@@ -29,8 +30,11 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li><b>Indian Institute of Information Technology Surat</b></li>
+        <li>Bachelor of Technology in Electronics and Communication Engineering</li>
+        <li>2020 - 2024</li>
+        <li>GPA: 7.9</li>
+        <li>Relevant Coursework: Data Structures, Web Development, Artificial Intelligence, Machine Learning</li>        
       </ul>
     ),
   }
