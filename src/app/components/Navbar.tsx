@@ -26,9 +26,17 @@ const navLinks: NavLink[] = [
 const Navbar: React.FC = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
+    const [showMessage, setShowMessage] = useState(false);
+
 
     const handleToggle = () => {
         setIsChecked(!isChecked);
+        setShowMessage(true);
+
+        // Hide the message after 3 seconds
+        setTimeout(() => {
+            setShowMessage(false);
+        }, 3000);
     };
 
     return (
@@ -46,7 +54,7 @@ const Navbar: React.FC = () => {
                         draggable={false}
                         className="cursor-pointer hover:animate-slowspin"
                     />
-                    
+
                 </Link>
 
                 <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-25">
@@ -66,10 +74,27 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="slider-toggle cursor-pointer relative inline-block w-14 h-8 mr-10" onClick={handleToggle}>
-                    <input type="checkbox" id="themeToggle" className="sr-only" />
-                    <div className={`slider absolute cursor-pointer border-black border-2 bg-${isChecked ? 'bg-purple-950' : 'bg-gray-300'}-300 rounded-full w-full h-full transition`}></div>
-                    <div className={`slider-dot absolute bg-black rounded-full w-8 h-7 top-1/2 transform -translate-y-1/2 ${isChecked ? 'translate-x-3/4' : ''} transition`}></div>
+                <div className="relative">
+                    <div
+                        className="slider-toggle cursor-pointer relative inline-block w-14 h-8 mr-10"
+                        onClick={handleToggle}
+                    >
+                        <input type="checkbox" id="themeToggle" className="sr-only" />
+                        <div
+                            className={`slider absolute cursor-pointer border-black border-2 ${isChecked ? 'bg-purple-950' : 'bg-gray-300'
+                                } rounded-full w-full h-full transition`}
+                        ></div>
+                        <div
+                            className={`slider-dot absolute bg-black rounded-full w-8 h-7 top-1/2 transform -translate-y-1/2 ${isChecked ? 'translate-x-3/4' : ''
+                                } transition`}
+                        ></div>
+                    </div>
+
+                    {showMessage && (
+                        <div className="absolute top-full right-2 mt-2 whitespace-nowrap text-s italic text-orange-500">
+                            ⚠️ Under construction
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
