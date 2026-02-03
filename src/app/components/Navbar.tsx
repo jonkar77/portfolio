@@ -20,7 +20,7 @@ const navLinks: NavLink[] = [
     },
     {
         title: "Resume",
-        path: "folder/Resume",
+        path: "/folder/Resume",
     },
 ];
 
