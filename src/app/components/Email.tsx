@@ -60,10 +60,10 @@ const EmailSection = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-5xl sm:text-6xl font-extrabold mb-4 bg-gradient-to-r from-gray-900 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                        Let's Connect
+                        Let&apos;s Connect
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                        I'm currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        I&apos;m currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 rounded-full mx-auto mt-4" />
                 </motion.div>
@@ -99,7 +99,7 @@ const EmailSection = () => {
                                 Connect with me
                             </h3>
                             <p className="text-gray-600 mb-6">
-                                Let's build something amazing together!
+                                Let&apos;s build something amazing together!
                             </p>
 
                             <div className="flex flex-row justify-center md:justify-start gap-4">
@@ -170,7 +170,7 @@ const EmailSection = () => {
                                             Message Sent!
                                         </h3>
                                         <p className="text-gray-600">
-                                            I'll get back to you as soon as possible.
+                                            I&apos;ll get back to you as soon as possible.
                                         </p>
                                     </motion.div>
                                 ) : (
