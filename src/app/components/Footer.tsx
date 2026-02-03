@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             className="text-center"
           >
             <p className="text-gray-600 text-sm">
-              &copy; {new Date().getFullYear()} Made with <span className="text-red-500">❤️</span> by{" "}
+              &copy; {new Date().getFullYear()} Hand made by{" "}
               <span className="font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Onkar Joshi
               </span>
