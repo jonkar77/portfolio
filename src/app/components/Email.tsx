@@ -193,7 +193,7 @@ const EmailSection = () => {
                                                 type="email"
                                                 id="email"
                                                 required
-                                                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300"
+                                                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-black focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300"
                                                 placeholder="your.email@example.com"
                                             />
                                         </div>
@@ -209,7 +209,7 @@ const EmailSection = () => {
                                                 type="text"
                                                 id="subject"
                                                 required
-                                                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300"
+                                                className="w-full px-4 py-3 rounded-xl text-black border border-gray-300 bg-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300"
                                                 placeholder="What's this about?"
                                             />
                                         </div>
@@ -225,7 +225,7 @@ const EmailSection = () => {
                                                 id="message"
                                                 rows={5}
                                                 required
-                                                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300 resize-none"
+                                                className="w-full px-4 py-3 rounded-xl text-black border border-gray-300 bg-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all duration-300 resize-none"
                                                 placeholder="Tell me about your project or just say hi!"
                                             />
                                         </div>
